@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		99E740C725E143FF004F84CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E740C525E143FF004F84CA /* LaunchScreen.storyboard */; };
 		99E740D225E143FF004F84CA /* SwiftPMAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E740D125E143FF004F84CA /* SwiftPMAppTests.swift */; };
 		99E740DD25E143FF004F84CA /* SwiftPMAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E740DC25E143FF004F84CA /* SwiftPMAppUITests.swift */; };
+		99E740EE25E1440F004F84CA /* Splatoon-wallpaper-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99E740ED25E1440F004F84CA /* Splatoon-wallpaper-1.jpg */; };
+		99E740F425E1446E004F84CA /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 99E740F325E1446E004F84CA /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		99E740D825E143FF004F84CA /* SwiftPMAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPMAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E740DC25E143FF004F84CA /* SwiftPMAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPMAppUITests.swift; sourceTree = "<group>"; };
 		99E740DE25E143FF004F84CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99E740ED25E1440F004F84CA /* Splatoon-wallpaper-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Splatoon-wallpaper-1.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E740F425E1446E004F84CA /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +103,7 @@
 		99E740B925E143FC004F84CA /* SwiftPMApp */ = {
 			isa = PBXGroup;
 			children = (
+				99E740ED25E1440F004F84CA /* Splatoon-wallpaper-1.jpg */,
 				99E740BA25E143FC004F84CA /* AppDelegate.swift */,
 				99E740BC25E143FC004F84CA /* SceneDelegate.swift */,
 				99E740BE25E143FC004F84CA /* ViewController.swift */,
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = SwiftPMApp;
+			packageProductDependencies = (
+				99E740F325E1446E004F84CA /* PKHUD */,
+			);
 			productName = SwiftPMApp;
 			productReference = 99E740B725E143FC004F84CA /* SwiftPMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 99E740AE25E143FC004F84CA;
+			packageReferences = (
+				99E740F225E1446E004F84CA /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 99E740B825E143FC004F84CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +244,7 @@
 			files = (
 				99E740C725E143FF004F84CA /* LaunchScreen.storyboard in Resources */,
 				99E740C425E143FF004F84CA /* Assets.xcassets in Resources */,
+				99E740EE25E1440F004F84CA /* Splatoon-wallpaper-1.jpg in Resources */,
 				99E740C225E143FC004F84CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99E740F225E1446E004F84CA /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99E740F325E1446E004F84CA /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99E740F225E1446E004F84CA /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99E740AF25E143FC004F84CA /* Project object */;
 }
